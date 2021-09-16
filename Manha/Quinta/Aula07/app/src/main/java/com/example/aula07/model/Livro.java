@@ -38,4 +38,13 @@ public class Livro {
     public void setGenero(String genero) {
         this.genero = genero;
     }
+
+
+    public String toString() {
+        return "Livro{" +
+                "titulo='" + titulo + '\'' +
+                ", autor='" + autor + '\'' +
+                ", genero='" + genero + '\'' +
+                '}';
+    }
 }
