@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/tvMatNomeFolha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="(123456) Fulano de Tal"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvSalBrutoFolha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:text="Salário Bruto: R$ 2500.00" />
+
+    <TextView
+        android:id="@+id/tvVerMais"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="[Ver +]"
+        android:textAlignment="textEnd"
+        android:textColor="#03A9F4"
+        android:textSize="20sp" />
+</LinearLayout>
