@@ -18,4 +18,16 @@ public abstract class FuncionarioController {
         return false;
     }
 
+    public static String buscarFuncionario(List<Funcionario> listaFunc, String matricula)
+    {
+        for (Funcionario temp : listaFunc)
+        {
+            if (temp.getMatricula().equals(matricula)) {
+                return temp.toString();
+            }
+        }
+
+        return null;
+    }
+
 }

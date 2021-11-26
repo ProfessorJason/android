@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    tools:context=".FormFolhaActivity">
+
+    <EditText
+        android:id="@+id/etBuscarFuncionario"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:ems="10"
+        android:hint="Informe a matrícula do funcionário"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/bBuscarFuncionario"
+        android:layout_width="match_parent"
+        android:layout_height="71dp"
+        android:layout_marginBottom="30dp"
+        android:text="Buscar Funcionário" />
+
+    <EditText
+        android:id="@+id/etDadosFuncionario"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:ems="10"
+        android:hint="Dados do funcionário"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/etValorHora"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginVertical="10dp"
+        android:ems="10"
+        android:hint="Valor da Hora de trabalho"
+        android:inputType="numberSigned|number|numberDecimal" />
+
+    <EditText
+        android:id="@+id/etHorasTrabalhadas"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:ems="10"
+        android:hint="Horas trabalhadas no mês"
+        android:inputType="numberSigned" />
+
+    <Button
+        android:id="@+id/bSalvarFolha"
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:layout_marginVertical="10dp"
+        android:text="Salvar Folha" />
+</LinearLayout>

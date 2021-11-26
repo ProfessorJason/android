@@ -6,8 +6,10 @@ import androidx.room.PrimaryKey;
 
 import com.example.aula13.controller.FolhaController;
 
+import java.io.Serializable;
+
 @Entity (tableName = "folhas")
-public class Folha {
+public class Folha implements Serializable {
 
     @PrimaryKey (autoGenerate = true)
     private int idFolha;

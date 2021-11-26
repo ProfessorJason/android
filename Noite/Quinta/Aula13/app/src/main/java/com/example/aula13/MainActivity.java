@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
 
     RecyclerView rvFuncionarios;
     FloatingActionButton fabAddFunc;
+    FloatingActionButton fabVerFolhas;
     FuncionarioAdapter adapter;
 
 
@@ -25,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
 
         rvFuncionarios = findViewById(R.id.rvFuncionarios);
         fabAddFunc = findViewById(R.id.fabAddFunc);
+        fabVerFolhas = findViewById(R.id.fabVerFolhas);
 
         adapter = new FuncionarioAdapter(this);
         LinearLayoutManager layout = new LinearLayoutManager(this, RecyclerView.VERTICAL, false);
@@ -35,6 +37,12 @@ public class MainActivity extends AppCompatActivity {
         fabAddFunc.setOnClickListener(v-> {
 
             startActivity(new Intent(this, FormFuncionarioActivity.class));
+
+        });
+
+        fabVerFolhas.setOnClickListener(v-> {
+
+            startActivity(new Intent(this, FolhaActivity.class));
 
         });
 

@@ -1,6 +1,8 @@
 package com.example.aula13.controller.adapter;
 
 import android.content.Context;
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,6 +12,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.aula13.FormFuncionarioActivity;
 import com.example.aula13.R;
 import com.example.aula13.database.FolhaDB;
 import com.example.aula13.database.dao.FuncionarioDAO;
@@ -52,16 +55,21 @@ public class FuncionarioAdapter extends RecyclerView.Adapter {
         // verificar clique longo no text view
         fuVH.tvDadosFunc.setOnLongClickListener(view -> {
 
-           new AlertDialog.Builder(context)
-                   .setTitle("Ações")
-                   .setMessage("O que deseja fazer com este funcionário?")
+            new AlertDialog.Builder(context)
+                    .setTitle("Ações")
+                    .setMessage("O que deseja fazer com este funcionário?")
                     .setPositiveButton("Excluir", (dialogInterface, i) -> {
                         funcionarioDAO.excluirFuncionario(f);
                         updateDataSet();
                         Toast.makeText(context, f.toString() + " foi excluído!", Toast.LENGTH_SHORT).show();
                     })
-                   .setNegativeButton("Nada", null)
-                   .show();
+                    .setNegativeButton("Editar", (dialogInterface, i) -> {
+                        Intent edtInent = new Intent(context, FormFuncionarioActivity.class);
+                        edtInent.putExtra("funcionario", f);
+                        context.startActivity(edtInent);
+                    })
+                    .setNeutralButton("Cancelar", null)
+                    .show();
 
             return false;
         });

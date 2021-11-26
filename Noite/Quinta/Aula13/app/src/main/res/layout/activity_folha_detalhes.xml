@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    tools:context=".FolhaDetalhesActivity">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="Detalhes da Folha de Pagamento"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tvDetalhesFunc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="Funcionario:"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tvDetalhesHoras"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="Horas Trabalhadas:"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tvDetalhesValorHora"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="Valor da hora: R$"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tvDetalhesSalB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="Salário Bruto: R$ "
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tvDetalhesIR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="IR: R$ "
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tvDetalhesINSS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="INSS: R$ "
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tvDetalhesFGTS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="FGTS: R$ "
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tvDetalhesSalL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="Salário Líquido: R$ "
+        android:textColor="#F44336"
+        android:textSize="18sp" />
+
+</LinearLayout>

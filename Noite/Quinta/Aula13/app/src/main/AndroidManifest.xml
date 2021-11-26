@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Aula13">
         <activity
+            android:name=".FolhaDetalhesActivity"
+            android:exported="true" />
+        <activity
+            android:name=".FolhaActivity"
+            android:exported="true" />
+        <activity
+            android:name=".FormFolhaActivity"
+            android:exported="true" />
+        <activity
             android:name=".FormFuncionarioActivity"
             android:exported="true" />
         <activity
